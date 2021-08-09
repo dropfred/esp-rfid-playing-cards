@@ -10,7 +10,7 @@ Gimmicked card craft :
 
 Even tought I rushed to build the gimmicked card with unsuitable glue (and did a quite poor job), the difference between the gimmicked card (left) and a normal card (right) in nearly unnoticeable to the untrained eye :
 
-![](rfid_playing_card_compare.jpg)
+![](rfid_playing_card_compare3.jpg)
 
 The suit and value of the card is stored in the RFID tag, using just one byte :
 - 4 bits for the value, zero being the jocker
