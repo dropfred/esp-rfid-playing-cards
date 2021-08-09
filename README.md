@@ -41,7 +41,9 @@ ESP32 WROOM DevKit pinout:
 The suit and value of the card is stored in the RFID tag, using just one byte (first byte of first data page) :
 
 - 4 bits for the value, zero being the jocker
-- 2 bits for the suit (CHaSeD order : zero -> Club, one -> Heart, etc.)
+- 2 bits for the suit (CHaSeD order : zero for clubs, one for hearts, etc.)
+
+As an example, the four of hearts is stored as 20 (14 in hexadecimal).
 
 First results are quite promising, the playing card can be scanned without any problem with more than 1.5 cm of wood between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything in a fake bottom.
 
