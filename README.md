@@ -8,7 +8,7 @@ Gimmicked card craft :
 
 ![](rfid_playing_card_craft.jpg "Splitted cards with a RFID tag roughly in the center")
 
-Even tought I rushed to build the gimmicked card with unsuitable glue (and did a quite poor job), the difference between the gimmicked card (left) and a normal card (right) in nearly unnoticeable to the untrained eye :
+Even tought I rushed to build the gimmicked card, the difference between the gimmicked card (left) and a normal card (right) in nearly unnoticeable to the untrained eye :
 
 ![](rfid_playing_card_compare.jpg)
 
