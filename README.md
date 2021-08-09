@@ -1,5 +1,7 @@
 # rfid-playing-cards
 
+## Presentation
+
 PoC project, currently no public files.
 
 The idea behind this project is to build a small device able to read gimmicked (stuffed with a MIFARE Ultralight RFID tag) playing cards, as a tool for magic tricks purpose.
@@ -16,4 +18,10 @@ The suit and value of the card is stored in the RFID tag, using just one byte :
 - 4 bits for the value, zero being the jocker
 - 2 bits for the suit (CHaSeD order : zero -> Club, one -> Heart, etc.)
 
-First results are quite positive, the playing card can be scanned without any problem with more than 1.5 cm of wood between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything in a fake bottom.
+First results are quite promising, the playing card can be scanned without any problem with more than 1.5 cm of wood between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything in a fake bottom.
+
+## Next steps
+
+- Currently, the card scan is sent thru HTTP because it is quite easy, but it is definitively not convenient and I plan to move to Bluetooth.
+- Build the actual device ;-)
+- Results are actually sent to a smartphone, a dedicated "magical" revelation device would be nice. 
