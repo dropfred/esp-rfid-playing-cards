@@ -14,7 +14,32 @@ Even tought I rushed to build the gimmicked card, the difference between the gim
 
 ![](rfid_playing_card_compare.jpg)
 
-The suit and value of the card is stored in the RFID tag, using just one byte :
+ESP8266 LoLin DevKit pinout:
+
+| MFRC522 |   ESP8266   |
+|:-------:|:-----------:|
+|   SDA   |  D4 (GPIO2) |
+|   SCK   | D5 (GPIO14) |
+|   MOSI  | D7 (GPIO13) |
+|   MISO  | D6 (GPIO12) |
+|  RESET  |  D3 (GPIO0) |
+
+`auto mfrc522 = MFRC522 {2, 0};`
+
+ESP32 WROOM DevKit pinout:
+
+| MFRC522 | ESP32 |
+|:-------:|:-----:|
+|   SDA   |  IO5  |
+|   SCK   | IO18  |
+|   MOSI  | IO19  |
+|   MISO  | IO23  |
+|  RESET  | IO17  |
+
+`auto mfrc522 = MFRC522 {5, 17};`
+
+The suit and value of the card is stored in the RFID tag, using just one byte (first byte of first data page) :
+
 - 4 bits for the value, zero being the jocker
 - 2 bits for the suit (CHaSeD order : zero -> Club, one -> Heart, etc.)
 
