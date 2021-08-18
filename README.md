@@ -49,10 +49,9 @@ The suit and value of the card is stored in the RFID tag, using just one byte (f
 
 As an example, the four of hearts is stored as 20 (14 in hexadecimal).
 
-My first results are quite promising, the playing card can be scanned without any problem with more than 1.5 cm of wood inserted between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything in a fake bottom.
+My first results are quite promising, the playing card can be scanned without any problem with more than 1.5 cm of wood or plastic inserted between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything.
 
 ## Next steps
 
-- Currently, the card scan is sent thru HTTP because it is quite easy, but it is definitively not convenient and I plan to move to Bluetooth.
 - Build the actual device ;-)
-- Results are actually sent to a smartphone, a dedicated "magical" revelation device would be nice. 
+- Results are actually sent to a smartphone thru Bluetooth, a dedicated "magical" revelation device would be nice. 
