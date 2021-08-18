@@ -16,10 +16,7 @@ Even tought I rushed to build the gimmicked card, the difference between the gim
 
 Gimmicked cards in action :
 
-<video controls="true" allowfullscreen="true" poster="rfid_playing_card_live_small.jpg">
-    <source src="rfid_playing_card_live_small.mp4" type="video/mp4">
-    <source src="rfid_playing_card_live_small.webm" type="video/webm">
-</video>
+https://user-images.githubusercontent.com/5340116/129927914-b9fa5808-1364-44f4-8fd4-b280ac9fa7ee.mp4
 
 ESP8266 LoLin DevKit pinout:
 
