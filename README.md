@@ -14,15 +14,11 @@ Even tought I rushed to build the gimmicked card, the difference between the gim
 
 ![](rfid_playing_card_compare.jpg)
 
-![](rfid_playing_card_compare.jpg)
-
 Gimmicked cards in action :
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="rfid_playing_card_live_small.jpg">
+<video controls="true" allowfullscreen="true" poster="rfid_playing_card_live_small.jpg">
     <source src="rfid_playing_card_live_small.mp4" type="video/mp4">
-  </video>
-</figure>
+</video>
 
 ESP8266 LoLin DevKit pinout:
 
