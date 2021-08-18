@@ -18,6 +18,7 @@ Gimmicked cards in action :
 
 <video controls="true" allowfullscreen="true" poster="rfid_playing_card_live_small.jpg">
     <source src="rfid_playing_card_live_small.mp4" type="video/mp4">
+    <source src="rfid_playing_card_live_small.webm" type="video/webm">
 </video>
 
 ESP8266 LoLin DevKit pinout:
