@@ -1,3 +1,5 @@
+
+
 # rfid-playing-cards
 
 ## Presentation
@@ -16,7 +18,7 @@ Even tought I rushed to build the gimmicked card, the difference between the gim
 
 Gimmicked cards in action :
 
-https://user-images.githubusercontent.com/5340116/129927914-b9fa5808-1364-44f4-8fd4-b280ac9fa7ee.mp4
+https://user-images.githubusercontent.com/5340116/130321166-c92e4260-1e3e-4e17-ab27-920475a490ad.mp4
 
 ESP8266 LoLin DevKit pinout:
 
