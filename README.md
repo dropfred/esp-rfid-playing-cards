@@ -55,5 +55,6 @@ My first results are quite promising, the playing card can be scanned without an
 
 ## Next steps
 
-- Build the actual device ;-)
-- Results are actually sent to a smartphone thru Bluetooth, a dedicated "magical" revelation device would be nice. 
+- Build the actual device using a "naked" ESP chip instead of a DevKit, and a battery instead of an USB wall charger.
+- Test consumption and heat. According to my super cheap USB current meter, it is about 100 mW, so heat shouldn't be an issue.
+- Results are currently sent to a smartphone using Bluetooth and a Bluetooth scanner application for development purpose only. In my opinion, using a smartphone in a magic trick context is suspicious, so I don't plan to develop an application for that device. Instead, I'm thinking of a "magical" revelation device.
