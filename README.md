@@ -51,10 +51,10 @@ The suit and value of the card is stored in the RFID tag, using just one byte (f
 
 As an example, the four of hearts is stored as 20 (14 in hexadecimal).
 
-My first results are quite promising, the playing card can be scanned without any problem with more than 1.5 cm of wood or plastic inserted between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything.
+First results are quite promising, the playing card can be scanned without any problem with more than 1.5 cm of wood or plastic inserted between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything.
 
 ## Next steps
 
 - Build the actual device using a "naked" ESP chip instead of a DevKit, and a battery instead of an USB wall charger.
-- Test consumption and heat. According to my super cheap USB current meter, it is about 100 mW, so heat shouldn't be an issue.
-- Results are currently sent to a smartphone using Bluetooth and a Bluetooth scanner application for development purpose only. In my opinion, using a smartphone in a magic trick context is suspicious, so I don't plan to develop an application for that device. Instead, I'm thinking of a "magical" revelation device.
+- Test consumption and heat. According to my super cheap USB current meter, it is about 100 mW, so heat shouldn't be such an issue.
+- Results are currently sent to a smartphone using Bluetooth and a Bluetooth scanner application, for development purpose only. In my opinion, using a smartphone in a magic trick context is suspicious, so I don't plan to develop an application for that device. Instead, I'm thinking of a "magical" revelation device, or a very small device that can be easily palmed or hidden. Depending of the design, a smartwatch may be an option, but I'm not very interested by this king of device.
