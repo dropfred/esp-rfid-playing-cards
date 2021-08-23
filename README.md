@@ -51,7 +51,7 @@ The suit and value of the card is stored in the RFID tag, using just one byte (f
 
 As an example, the four of hearts is stored as 20 (14 in hexadecimal).
 
-First results are quite promising, the playing card can be scanned without any problem with more than 1.5 cm of wood or plastic inserted between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything.
+First results are quite promising, the playing card can be scanned without any problem with more than 2 cm of wood or plastic inserted between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything.
 
 ## Next steps
 
