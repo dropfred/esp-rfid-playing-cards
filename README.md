@@ -1,10 +1,8 @@
-
-
 # rfid-playing-cards
 
 ## Presentation
 
-PoC project, currently no public files.
+PoC project.
 
 The idea behind this project is to build a small device able to read gimmicked (stuffed with a MIFARE Ultralight RFID tag) playing cards, as a tool for magic tricks purpose.
 
@@ -18,7 +16,7 @@ Even tought I rushed to build the gimmicked card, the difference between the gim
 
 Gimmicked cards in action :
 
-https://user-images.githubusercontent.com/5340116/130321166-c92e4260-1e3e-4e17-ab27-920475a490ad.mp4
+https://user-images.githubusercontent.com/5340116/131902276-2684acd9-e4c4-4cf1-9620-3abb66effe89.mp4
 
 ESP8266 LoLin DevKit pinout:
 
@@ -57,4 +55,4 @@ First results are quite promising, the playing card can be scanned without any p
 
 - Build the actual device using a "naked" ESP chip instead of a DevKit, and a battery instead of an USB wall charger.
 - Test consumption and heat. According to my super cheap USB current meter, it is about 100 mW, so heat shouldn't be such an issue.
-- Results are currently sent to a smartphone using Bluetooth and a Bluetooth scanner application, for development purpose only. In my opinion, using a smartphone in a magic trick context is suspicious, so I don't plan to develop an application for that device. Instead, I'm thinking of a "magical" revelation device, or a very small device that can be easily palmed or hidden. Depending of the design, a smartwatch may be an option, but I'm not very interested by this kind of device.
+- In my opinion, using a smartphone in a magic trick context is suspicious, so I don't plan to develop a mobile application for that device. Instead, I'm thinking of a "magical" revelation device, or a very small device that can be easily palmed or hidden. Depending of the design, a smartwatch may be an option.
