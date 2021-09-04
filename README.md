@@ -16,7 +16,7 @@ Even tought I rushed to build the gimmicked card, the difference between the gim
 
 Gimmicked cards in action :
 
-https://user-images.githubusercontent.com/5340116/131902276-2684acd9-e4c4-4cf1-9620-3abb66effe89.mp4
+https://user-images.githubusercontent.com/5340116/132092393-8db5b20a-155d-48b7-a8ec-d10e4e1b6cbc.mp4
 
 ESP8266 LoLin DevKit pinout:
 
