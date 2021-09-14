@@ -100,7 +100,7 @@ void setup()
 }
 
 // An active scan seems necessary for tag removal detection.
-// If tag removal isn't required, irq should be a better choice.
+// If tag removal detection isn't required, irq should be a better choice.
 void loop()
 {
     byte atqa_buffer[2];
