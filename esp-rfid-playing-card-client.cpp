@@ -1,7 +1,11 @@
+#include <Arduino.h>
+
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include <Fonts/Org_01.h>
+
 #include <BLEDevice.h>
+
+#include <Fonts/Org_01.h>
 
 #include <cstddef>
 #include <cstdint>
