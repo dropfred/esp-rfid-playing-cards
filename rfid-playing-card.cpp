@@ -21,17 +21,17 @@ namespace
     char const * const VERSION = "0.1";
 
     // ESP8266 LoLin
-    // auto const PIN_MFRC522_SS  = byte {2};
-    // auto const PIN_MFRC522_RST = byte {0};
+    // byte const PIN_MFRC522_SS  {2};
+    // byte const PIN_MFRC522_RST {0};
     // ESP32 WROOM
-    auto const PIN_MFRC522_SS  = byte {5};
-    auto const PIN_MFRC522_RST = byte {17};
+    byte const PIN_MFRC522_SS  {5};
+    byte const PIN_MFRC522_RST {17};
 
-    auto const DATA_PAGE = byte {4};
+    byte const DATA_PAGE {4};
 
-    auto const EMPTY = std::uint32_t {0xff};
+    std::uint32_t const EMPTY {0xff};
 
-    auto mfrc522 = MFRC522 {PIN_MFRC522_SS, PIN_MFRC522_RST};
+    MFRC522 mfrc522 {PIN_MFRC522_SS, PIN_MFRC522_RST};
 
     auto card = EMPTY;
 
