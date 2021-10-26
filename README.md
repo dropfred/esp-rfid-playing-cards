@@ -28,7 +28,7 @@ ESP8266 LoLin DevKit pinout:
 |   MISO  | D6 (GPIO12) |
 |  RESET  |  D3 (GPIO0) |
 
-`auto mfrc522 = MFRC522 {2, 0};`
+`MFRC522 mfrc522 {2, 0};`
 
 ESP32 WROOM DevKit pinout:
 
@@ -40,14 +40,14 @@ ESP32 WROOM DevKit pinout:
 |   MISO  | IO23  |
 |  RESET  | IO17  |
 
-`auto mfrc522 = MFRC522 {5, 17};`
+`MFRC522 mfrc522 {5, 17};`
 
 The suit and value of the card is stored in the RFID tag, using just one byte (first byte of first data page) :
 
 - 4 bits for the value, zero being the jocker
 - 2 bits for the suit (CHaSeD order : zero for clubs, one for hearts, etc.)
 
-As an example, the four of hearts is stored as 20 (14 in hexadecimal).
+As an example, the four of hearts is stored as 0x14.
 
 First results are quite promising, the playing card can be scanned without any problem with more than 2 cm of wood or plastic inserted between the MFRC522 RFID tag reader and the card, giving plenty of room to hide everything.
 
