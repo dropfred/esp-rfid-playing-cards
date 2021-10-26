@@ -18,15 +18,15 @@ namespace
 {
     char const * const VERSION = "0.1";
 
-    auto card = std::string {};
+    std::string card {};
 
     char const * const SUITS[] = {"CLUB", "HEART", "SPADE", "DIAMOND"};
     char const * const INDICES[] = {"JOCKER", "ACE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "HEIGHT", "NINE", "TEN", "JACK", "QUEEN", "KING"};
 
     void set_card(std::uint8_t c)
     {
-        auto s = (c >> 4) & 3;
-        auto v = c & 0x0f;
+        std::uint8_t s = (c >> 4) & 3;
+        std::uint8_t v = c & 0x0f;
 
         if ((v < 14) && ((v == 0) || (s < 4)))
         {
@@ -43,17 +43,17 @@ namespace
         }
     }
 
-    auto SCREEN_WIDTH  = std::uint8_t {128};
-    auto SCREEN_HEIGHT = std::uint8_t {64};
+    std::uint8_t const SCREEN_WIDTH  {128};
+    std::uint8_t const SCREEN_HEIGHT {64};
 
     // ESP NodeMcu LoLin
-    // auto PIN_SSD1306_SDA = std::uint8_t {4};
-    // auto PIN_SSD1306_SCL = std::uint8_t {5};
+    // std::uint8_t const PIN_SSD1306_SDA {4};
+    // std::uint8_t const PIN_SSD1306_SCL {5};
     // ESP32-CAM
-    auto const PIN_SSD1306_SDA = std::uint8_t {14};
-    auto const PIN_SSD1306_SCL = std::uint8_t {15};
+    std::uint8_t const PIN_SSD1306_SDA {14};
+    std::uint8_t const PIN_SSD1306_SCL {15};
 
-    Adafruit_SSD1306 ssd1306(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+    Adafruit_SSD1306 ssd1306 {SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1};
 
     GFXfont const * const FONT_STATUS = &Org_01;
     GFXfont const * const FONT_MAIN   = nullptr;
@@ -204,7 +204,7 @@ void loop()
         // ssd1306.setFont(nullptr);
         ssd1306.setFont(FONT_MAIN);
         ssd1306.setTextSize(1, 2);
-        auto const * txt = card.c_str();
+        char const * txt = card.c_str();
         // center text
         {
             std::int16_t x, y; std::uint16_t w, h;
@@ -224,7 +224,7 @@ void loop()
         ble.device = nullptr;
         ble.client = nullptr;
         ble.connected = false;
-        auto * scan = BLEDevice::getScan();
+        BLEScan * scan = BLEDevice::getScan();
         scan->clearResults();
         scan->start(10, &cb_scan_complete, true);
         // Serial.println(F("scan"));
